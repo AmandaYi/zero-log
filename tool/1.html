@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大小写转换</title>
+	<style>
+		html,body{
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			height: 100%;
+			font-size: 25px;
+			color: #000;
+			font-family: "Microsoft Yahei";
+		}
+		div {
+			width: 90%;
+			height: 100%;
+			margin: 0 auto;
+			box-sizing: border-box;
+
+		}
+		fieldset {
+			width: 45%;
+			height: 90%;
+			float: left;
+		}
+		textarea {
+			margin: 0;
+			padding: 0;
+			width: 100%;		
+			height: 90%;
+			float: left;
+			margin: 0 auto;
+			font-size: 18px;
+		}
+		textarea.textareaLow {
+			border: 2px solid #000;
+		}
+		textarea.textareaUpp {
+			border: 2px solid #000;
+		}
+		textarea::after{
+			content: '';
+			display: block;
+			visibility: hidden;
+			height: 0;
+			clear: both;
+		}
+	</style>
+</head>
+<body ng-app="WordsTg">
+<div ng-controller="TgController">
+ <fieldset>
+  	<legend>小写文本框</legend>
+	<textarea ng-model="textLow" ng-change="trans1()" ng-blur="trans1()" ng-keydown="trans1()" class="textareaLow"></textarea>  
+	</fieldset>
+	 <fieldset>
+  	<legend>大写文本框</legend>
+	<textarea ng-model="textUp" ng-change="trans2()" ng-blur="trans2()" ng-keydown="trans2()" class="textareaUpp"></textarea> 
+	</fieldset>
+</div>	
+<script src="https://cdn.bootcss.com/angular.js/1.5.8/angular.min.js"></script>
+	<script>
+		angular.module('WordsTg',[]).controller('TgController',['$scope',function($scope){
+ 				$scope.trans1 = function () {
+
+	 				$scope.textUp = angular.uppercase($scope.textLow);
+ 				}
+ 				$scope.trans2 = function () {
+
+	 				$scope.textLow = angular.lowercase($scope.textUp);
+	 			} 
+		}])
+	</script>
+</body>
+</html>
