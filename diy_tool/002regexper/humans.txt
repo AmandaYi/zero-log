@@ -3,14 +3,14 @@
 
 # TEAM
 
-    Creator: Jeff Avallone
-    Site: http://github.com/javallone
-    Twitter: @javallone
+    Creator: AmandaYi
+    Site: http://github.com/AmandaYi
+    Twitter: @AmandaYi
 
 # THANKS
 
-    strfriend.com for the idea, whatever happened to you?
+       whatever happened to you?
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3, SVG, Sass, Open Iconic
+    HTML5, CSS3, SVG, Sass, Open Ionic
