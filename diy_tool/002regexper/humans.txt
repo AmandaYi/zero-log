@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Creator: AmandaYi
+    Site: http://github.com/AmandaYi
+    Twitter: @AmandaYi
+
+# THANKS
+
+       whatever happened to you?
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, SVG, Sass, Open Ionic
