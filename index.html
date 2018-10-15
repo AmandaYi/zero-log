@@ -1,404 +1,642 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  
-  <title>七月的博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="全栈技术">
-<meta name="keywords" content="javascript,react,vue,angular,react native,nodejs,go,mysql,mongodb,shell,linux,php">
-<meta property="og:type" content="website">
-<meta property="og:title" content="七月的博客">
-<meta property="og:url" content="https://amandayi.github.com/index.html">
-<meta property="og:site_name" content="七月的博客">
-<meta property="og:description" content="全栈技术">
-<meta property="og:locale" content="zh-cn">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="七月的博客">
-<meta name="twitter:description" content="全栈技术">
-  
-    <link rel="alternate" href="/atom.xml" title="七月的博客" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="小云云">
     
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
+    <meta name="description" content="全栈技术">
+    
+    
+    
+    
+    
+    
+    <title>七月的博客</title>
+    <link href=”https://amandayi.github.com“ rel=”prefetch” />
 
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/highslide/highslide-full.min.js"></script>
+    <link rel="stylesheet" href="/js/highslide/highslide.css">
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/imgs/001avatar.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
+        }
+      }
+    </script>-->
 </head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    
-    <div id="header-inner" class="inner">
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://amandayi.github.com"></form>
-      </div>
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">首页</a>
-        
-          <a class="main-nav-link" href="/archives">分类</a>
-        
-          <a class="main-nav-link" href="/about">关于</a>
-        
-          <a class="main-nav-link" href="https://www.baidu.com/">项目</a>
-        
-          <a class="main-nav-link" href="/tool">小工具</a>
-        
-      </nav>
-      
-    </div>
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">七月的博客</a>
-      </h1>
-      
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-rem_century" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/05/10/rem_century/" class="article-date">
-  <time datetime="2017-05-10T00:00:00.000Z" itemprop="datePublished">2017-05-10</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/技术/">技术</a>►<a class="article-category-link" href="/categories/技术/适配/">适配</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/10/rem_century/">REM时代(mobile_rem_century_workflow_ionic3_angular4)</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- Table of Contents -->
-        
-        <h2 id="声明-该REM时代设计思路-可以在任何的地方使用"><a href="#声明-该REM时代设计思路-可以在任何的地方使用" class="headerlink" title="声明,该REM时代设计思路,可以在任何的地方使用"></a>声明,该REM时代设计思路,可以在任何的地方使用</h2><ul>
-<li>scss换成less,或者stylus等</li>
-<li>ionic+angular的项目,换成vue+veex,react等</li>
-<li>直接在bootstrap+jquery原始项目中使用进行引入使用<br>在assets下加入屏幕改变重新计算HTML根节点的fontSize的JS文件<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">src/assets/js/screencom.min.js</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>接着在根目录的index.html中 写入<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">" viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"assets/js/screencom.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>在theme下面,添加一个base.scss文件<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">src/theme/base.scss</span><br></pre></td></tr></table></figure></p>
-<p>内容是<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@charset &quot;utf-8&quot;;</span><br><span class="line">@function r($px) &#123;</span><br><span class="line">    @return $px /64px * 1rem;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>在主题src/theme/variables.scss文件引入base.scss<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">import</span> <span class="string">"ionic.globals"</span>;</span><br><span class="line">@<span class="keyword">import</span> <span class="string">"./base.scss"</span>;</span><br></pre></td></tr></table></figure></p>
-<p>使用<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="built_in">r</span>(12px);</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="built_in">r</span>(12px);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>注意强调,如果设计图不是640px的宽度的话需要更改下面的两个文件</p>
-<ul>
-<li><p>base.scss 里面的分母 改为 尺寸除以10后的值<br>比如你的设计图是750px宽度的,那么base.scss文件就是如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@charset &quot;utf-8&quot;;</span><br><span class="line">@function r($px) &#123;</span><br><span class="line">    @return $px /75px * 1rem;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>screencom.min.js 里面需要更改两个值,改为尺寸设计图的宽度<br>比如你的设计图是750px宽度的,那么screencom.min.js文件就是如下</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">i</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> t = r.getBoundingClientRect().width,</span><br><span class="line">            i = <span class="regexp">/(iPhone|iPod|iPad|Android|ios|Windows Phone)/gim</span>.test(navigator.userAgent),</span><br><span class="line">            <span class="comment">//需要改动的是这里的两个值</span></span><br><span class="line">            n = i &amp;&amp; t / l &gt; <span class="number">750</span> ? t : <span class="number">750</span>;</span><br><span class="line">        t / l &gt; n &amp;&amp; (t = n * l);</span><br><span class="line">        <span class="keyword">var</span> a = t / <span class="number">10</span>;</span><br><span class="line">        r.style.fontSize = a + <span class="string">"px"</span>, d.rem = e.rem = a</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="最后再次声明-该REM时代设计思路-可以在任何的地方使用"><a href="#最后再次声明-该REM时代设计思路-可以在任何的地方使用" class="headerlink" title="最后再次声明,该REM时代设计思路,可以在任何的地方使用"></a>最后再次声明,该REM时代设计思路,可以在任何的地方使用</h2><ul>
-<li>scss换成less,或者stylus等</li>
-<li>ionic+angular的项目,换成vue+veex,react等</li>
-<li>直接在bootstrap+jquery原始项目中使用进行引入使用</li>
-<li>等等一些各种地方,比如 Electron</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://amandayi.github.com/2017/05/10/rem_century/" data-id="cjna0qnrn000090vu02qmk7cy" class="article-share-link">分享</a>
-      
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ionic3/">ionic3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/rem/">rem</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
- 
-
-
-  
-    <article id="post-ionic3-tutorial" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/01/14/ionic3-tutorial/" class="article-date">
-  <time datetime="2017-01-14T00:00:00.000Z" itemprop="datePublished">2017-01-14</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/技术/">技术</a>►<a class="article-category-link" href="/categories/技术/ionic3/">ionic3</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/14/ionic3-tutorial/">ionic3入门教程</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- Table of Contents -->
-        
-        <h2 id="ionic教程01"><a href="#ionic教程01" class="headerlink" title="ionic教程01"></a>ionic教程01</h2><h3 id="安装启动阶段"><a href="#安装启动阶段" class="headerlink" title="安装启动阶段"></a>安装启动阶段</h3><p>全局安装ionic<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cordova ionic</span><br></pre></td></tr></table></figure></p>
-<p>初始化ionic项目, myApp是项目的名字,会生成一个myApp的文件夹,可以进行更改, blank是ionic官方提供的一个模版,一共三个,分别是blank tabs sidemenu,同时可以不指定模版tabs<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ionic start myApp blank</span><br></pre></td></tr></table></figure></p>
-<h3 id="进入myApp"><a href="#进入myApp" class="headerlink" title="进入myApp"></a>进入myApp</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd myApp</span><br></pre></td></tr></table></figure>
-<p>然后执行,如下命令,可以shell会自动打开浏览器,每一次的修改,即可自动更新浏览器界面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ionic serve</span><br></pre></td></tr></table></figure></p>
-<p>初始化一个新的组件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ionic g page second</span><br></pre></td></tr></table></figure></p>
-<h3 id="介绍几个ionic功能"><a href="#介绍几个ionic功能" class="headerlink" title="介绍几个ionic功能"></a>介绍几个ionic功能</h3><ul>
-<li>001进入页面首选page, 首先找到<br>D:\myApp\src\app\app.component.ts<br>大约在11行, 可以更改进入的页面首选page,<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="class"><span class="keyword">class</span> <span class="title">MyApp</span> </span>&#123;</span><br><span class="line">    rootPage:any = HomePage;</span><br><span class="line">    <span class="keyword">constructor</span>(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) &#123;</span><br><span class="line">    platform.ready().then(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>在上面的HomePage是引入的<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; HomePage &#125; <span class="keyword">from</span> <span class="string">'../pages/home/home'</span>;</span><br></pre></td></tr></table></figure></p>
-<p>可以进行更改,比如我更改为<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rootPage:any = HomePage;</span><br></pre></td></tr></table></figure></p>
-<p>这时候的整体ts文件是<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; Component &#125; <span class="keyword">from</span> <span class="string">'@angular/core'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; Platform &#125; <span class="keyword">from</span> <span class="string">'ionic-angular'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; StatusBar &#125; <span class="keyword">from</span> <span class="string">'@ionic-native/status-bar'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; SplashScreen &#125; <span class="keyword">from</span> <span class="string">'@ionic-native/splash-screen'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> &#123; HomePage &#125; <span class="keyword">from</span> <span class="string">'../pages/home/home'</span>;</span><br><span class="line"><span class="comment">//这里是新引入的页面,也就是通过ionio g page second 初始化的新page</span></span><br><span class="line"><span class="keyword">import</span> &#123; SecondPage&#125; <span class="keyword">from</span> <span class="string">'../pages/second/second'</span>;</span><br><span class="line">@Component(&#123;</span><br><span class="line">  templateUrl: <span class="string">'app.html'</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">export</span> <span class="class"><span class="keyword">class</span> <span class="title">MyApp</span> </span>&#123;</span><br><span class="line">  rootPage:any = SecondPage;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">constructor</span>(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) &#123;</span><br><span class="line">    platform.ready().then(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">      <span class="comment">// Okay, so the platform is ready and our plugins are available.</span></span><br><span class="line">      <span class="comment">// Here you can do any higher level native things you might need.</span></span><br><span class="line">      statusBar.styleDefault();</span><br><span class="line">      splashScreen.hide();</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<ul>
-<li>002通过button按钮跳转到新page<br>首先,需要在home.html(D:\myApp\src\pages\home\home.html)文件里面写上如下,其中第十行,<br>有一个按钮小组件,绑定了click事件,绑定的函数是toPageSecond()<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ion-header</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ion-navbar</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ion-title</span>&gt;</span></span><br><span class="line">   Ionic Blank</span><br><span class="line">    <span class="tag">&lt;/<span class="name">ion-title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ion-navbar</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ion-header</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ion-content</span> <span class="attr">padding</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">button</span> <span class="attr">ion-button</span> (<span class="attr">click</span>)=<span class="string">"toPageSecond()"</span>&gt;</span>点我进入第二页<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ion-content</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>这时候就需要去D:\myApp\src\pages\home\home.ts进行书写函数toPageSecond()的功能,<br>我们要实现的功能是点击这个按钮直接跳转到second的page里面,那么我们需要做的是在toPageSecond()中直接使用ionic的路由API</p>
-<ul>
-<li><p>第一步,必须先引入要跳转的页面</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; Component &#125; <span class="keyword">from</span> <span class="string">'@angular/core'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; NavController &#125; <span class="keyword">from</span> <span class="string">'ionic-angular'</span>;</span><br><span class="line"><span class="comment">//第一步,必须先引入要跳转的页面</span></span><br><span class="line"><span class="keyword">import</span> &#123; SecondPage &#125; <span class="keyword">from</span> <span class="string">'../second/second'</span>;</span><br><span class="line">@Component(&#123;</span><br><span class="line">  selector: <span class="string">'page-home'</span>,</span><br><span class="line">  templateUrl: <span class="string">'home.html'</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">export</span> <span class="class"><span class="keyword">class</span> <span class="title">HomePage</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(public navCtrl: NavController) &#123;</span><br><span class="line">  &#125;</span><br><span class="line"> <span class="comment">//代码跳转逻辑,push函数有两个参数,第一个是页面,第二个是参数</span></span><br><span class="line">  toPageSecond()&#123;</span><br><span class="line">    <span class="keyword">this</span>.navCtrl.push(SecondPage, &#123;</span><br><span class="line">      id: <span class="string">"123"</span></span><br><span class="line">    &#125;);</span><br><span class="line">  	<span class="built_in">console</span>.log(<span class="number">1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>003page跳转传递参数的实现<br>第一步,先设置好接收的参数,比如在second需要接收参数,那么的话,就需要在D:\myApp\src\pages\second\second.ts这个文件里面设置一个容器用来接收,其中的:id或者:home都是用来接收参数的容器</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@IonicPage(&#123;</span><br><span class="line">  name:<span class="string">"second"</span>,</span><br><span class="line">  segment: <span class="string">'second-path/idname'</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>第二步,参数的处理, 使用用来接收参数<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.navParams.get(<span class="string">"id"</span>)</span><br><span class="line"><span class="keyword">this</span>.navParams.get(<span class="string">"name"</span>)</span><br></pre></td></tr></table></figure></p>
-<p>第三步,传递参数,home页面是来源页面,那么参数的起点就是home.ts,如下<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="class"><span class="keyword">class</span> <span class="title">HomePage</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">constructor</span>(public navCtrl: NavController) &#123;</span><br><span class="line"> </span><br><span class="line">  &#125;</span><br><span class="line">  toPageSecond()&#123;</span><br><span class="line">    <span class="keyword">this</span>.navCtrl.push(<span class="string">"second"</span>, &#123;</span><br><span class="line">      <span class="comment">//这里就是要传递的参数,可以写多个</span></span><br><span class="line">        id: <span class="number">123</span>,</span><br><span class="line">        name: <span class="string">"小明"</span></span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="补充-01找不到模块的问题"><a href="#补充-01找不到模块的问题" class="headerlink" title="补充, 01找不到模块的问题"></a>补充, 01找不到模块的问题</h3><p>Component SecondPage is not part of any NgModule or the module has not been imported into your module.<br>这句话的意思是没有把文件新的page注册到app.module.ts的declarations里面,需要在D:\myApp\src\app\app.module.ts 进行增加,同时注意新page的引入<br>Error: No component factory found for SecondPage. Did you add it to @NgModule.entryComponents?<br>这个问题是因为没有在entryComponents里面进行注册造成的,因此也需要在 pp.module.entryComponents,需要在D:\myApp\src\app\app.module.ts 进行增加,同时注意新page的引入<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; BrowserModule &#125; <span class="keyword">from</span> <span class="string">'@angular/platform-browser'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; ErrorHandler, NgModule &#125; <span class="keyword">from</span> <span class="string">'@angular/core'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; IonicApp, IonicErrorHandler, IonicModule &#125; <span class="keyword">from</span> <span class="string">'ionic-angular'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; SplashScreen &#125; <span class="keyword">from</span> <span class="string">'@ionic-native/splash-screen'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; StatusBar &#125; <span class="keyword">from</span> <span class="string">'@ionic-native/status-bar'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> &#123; MyApp &#125; <span class="keyword">from</span> <span class="string">'./app.component'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; HomePage &#125; <span class="keyword">from</span> <span class="string">'../pages/home/home'</span>;</span><br><span class="line"><span class="comment">//引入新页面</span></span><br><span class="line"><span class="keyword">import</span> &#123; SecondPage &#125; <span class="keyword">from</span> <span class="string">'../pages/second/second'</span>;</span><br><span class="line">@NgModule(&#123;</span><br><span class="line">  declarations: [</span><br><span class="line">    MyApp,</span><br><span class="line">    HomePage,</span><br><span class="line">    <span class="comment">//注册新page</span></span><br><span class="line">    SecondPage</span><br><span class="line">  ],</span><br><span class="line">  imports: [</span><br><span class="line">    BrowserModule,</span><br><span class="line">    IonicModule.forRoot(MyApp)</span><br><span class="line">  ],</span><br><span class="line">  bootstrap: [IonicApp],</span><br><span class="line">  entryComponents: [</span><br><span class="line">    MyApp,</span><br><span class="line">    HomePage,</span><br><span class="line">    <span class="comment">// 进行注册page</span></span><br><span class="line">    SecondPage</span><br><span class="line">  ],</span><br><span class="line">  providers: [</span><br><span class="line">    StatusBar,</span><br><span class="line">    SplashScreen,</span><br><span class="line">    &#123;<span class="attr">provide</span>: ErrorHandler, <span class="attr">useClass</span>: IonicErrorHandler&#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">export</span> <span class="class"><span class="keyword">class</span> <span class="title">AppModule</span> </span>&#123;&#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="补充-02找不到模块的问题-多次引入模块的问题"><a href="#补充-02找不到模块的问题-多次引入模块的问题" class="headerlink" title="补充, 02找不到模块的问题,多次引入模块的问题"></a>补充, 02找不到模块的问题,多次引入模块的问题</h3><p>Type SecondPage is part of the declarations of 2 modules: AppModule and SecondPageModule! Please consider moving SecondPage to a higher module that imports AppModule and SecondPageModule. You can also create a new NgModule that exports and includes SecondPage then import that NgModule in AppModule and SecondPageModule.<br>当出现这个问题的时候,就是你不但在app.module.ts里面引入了secondpage,同时也在</p>
-<h2 id="最后结束-记得把页面首选page恢复"><a href="#最后结束-记得把页面首选page恢复" class="headerlink" title="最后结束,记得把页面首选page恢复"></a>最后结束,记得把页面首选page恢复</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://amandayi.github.com/2017/01/14/ionic3-tutorial/" data-id="cjna0qnrt000290vup1xe0m4t" class="article-share-link">分享</a>
-      
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ionic3入门教程/">ionic3入门教程</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
- 
-
-
-  
-
+    <!-- 背景轮播图功能 -->
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
+    </ul>
 </section>
-           
-    <aside id="sidebar">
-  
+    <!-- 欧尼酱功能, 谁用谁知道 -->
     
-  <div class="widget-wrap">
+    <div class="gal-menu gal-dropdown">
+    <div class="circle" id="gal">
+        <div class="ring">
+            <a href="https://amandayi.github.com" class="menuItem" style="left: 50%; top: 15%;">首页</a>
+            
+            <a class="menuItem" style="left: 80.3109%; top: 32.5%;">下一页</a>
+            
+            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">归档</a>
+            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">关于</a>
+            <a href="/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">留言板</a>
+            
+            <a class="menuItem" style="left: 19.6891%; top: 32.5%;">上一页</a>
+            
+        </div>
+        <audio id="audio" src="/imgs/oni.mp3"></audio>
+    </div>
+</div>
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target=".bs-navbar-collapse"
+                    aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="https://amandayi.github.com">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">七月的博客</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class="current">
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class="">
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/categories/技术/">技术</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/技术/适配/">适配</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/技术/ionic3/">ionic3</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/tags/rem/">rem</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/ionic3/">ionic3</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/ionic3入门教程/">ionic3入门教程</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+                
+                <li class="">
+                    <a href="/tool">
+                        <i class="fa fa-wrench"></i>小工具
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<div id="article-list">
      
-        <h3 class="follow-title ">Follow me</h3>
      
-    <div class="widget follow">
-      
-              <a class="github" aria-hidden="true" href="https://github.com/AmandaYi" target="_blank" title="Github"></a>
-      
-      
-      
-      
-            <a class="email" aria-hidden="true"  href="mailto:891177434@qq.com" target="_blank" title="邮箱"></a>
-      
+     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+    
+    <div class="data-article hidden-xs">
+        <span class="month">05月</span>
+        <span class="day">10</span>
     </div>
-  </div>
-
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title categories">分类</h3>
-    <div class="widget" id="categories">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/技术/">技术</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/技术/ionic3/">ionic3</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/技术/适配/">适配</a><span class="category-list-count">1</span></li></ul></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title tagcloud">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/ionic3/" style="font-size: 14px;">ionic3</a> <a href="/tags/ionic3入门教程/" style="font-size: 14px;">ionic3入门教程</a> <a href="/tags/rem/" style="font-size: 14px;">rem</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title recent-posts">最新文章</h3>
-    <div class="widget">
-      <ul>
+    <!-- 大型设备文章 -->
+    <section class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2017/05/10/rem_century/">
+                    <span>REM时代(mobile_rem_century_workflow_ionic3_angular4)</span>
+                </a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/rem/">rem</a>, 
+                
+                <a href="/tags/ionic3/">ionic3</a>
+                
+            </span>
+            
+            
+            <!-- TODO 添加评论统计 -->
+            <!--<span class="label label-gal">
+                <i class="fa fa-comments"></i>
+                <a href="/2017/05/10/rem_century/#comments">739</a>
+            </span>-->
+        </div>
+        <div class="alert alert-gal article-body content-article">
+            <div class="item">
+                <a href="/2017/05/10/rem_century/">
+                    <div class="img">
+                        
+                        <img src="/imgs/preview/preview4.jpg" alt="REM时代(mobile_rem_century_workflow_ionic3_angular4)">
+                    </div>
+                    <div class="info">
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="visible-xs">
+        <div class="title-article">
+            <center>
+                <h4>
+                    <a href="/2017/05/10/rem_century/">
+                        <span>REM时代(mobile_rem_century_workflow_ionic3_angular4)</span>
+                    </a>
+                </h4>
+            </center>
+        </div>
+        <p></p>
+        <center>
+            <i class="fa fa-calendar"></i> 2017-05-10
+        </center>
+        <p></p>
+        <p></p>
+        <center>
+            
+            <i class="fa fa-tags"></i>
+            
+            <a href="/tags/rem/">rem</a>, 
+            
+            <a href="/tags/ionic3/">ionic3</a>
+            
+            
+            
+        </center>
+        <p></p>
+        <div class="alert alert-gal article-body content-article">
+            <p style="text-align: center;">
+                <a href="/2017/05/10/rem_century/">
+                    
+                    <img src="/imgs/preview/preview2.jpg" alt="REM时代(mobile_rem_century_workflow_ionic3_angular4)">
+                </a>
+            </p>
+        </div>
         
-          <li>
-            <a href="/2017/05/10/rem_century/">REM时代(mobile_rem_century_workflow_ionic3_angular4)</a>
-          </li>
-        
-          <li>
-            <a href="/2017/01/14/ionic3-tutorial/">ionic3入门教程</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
+        <a class="btn btn-danger pull-right read-more btn-block" href="/2017/05/10/rem_century/">
+            阅读全文
+            <!--<span class="badge">739</span>-->
+        </a>
+    </section>
+</div>
+     
+     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title archive">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">五月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">1</span></li></ul>
+    <div class="data-article hidden-xs">
+        <span class="month">01月</span>
+        <span class="day">14</span>
     </div>
-  </div>
+    <!-- 大型设备文章 -->
+    <section class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2017/01/14/ionic3-tutorial/">
+                    <span>ionic3入门教程</span>
+                </a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/ionic3入门教程/">ionic3入门教程</a>
+                
+            </span>
+            
+            
+            <!-- TODO 添加评论统计 -->
+            <!--<span class="label label-gal">
+                <i class="fa fa-comments"></i>
+                <a href="/2017/01/14/ionic3-tutorial/#comments">739</a>
+            </span>-->
+        </div>
+        <div class="alert alert-gal article-body content-article">
+            <div class="item">
+                <a href="/2017/01/14/ionic3-tutorial/">
+                    <div class="img">
+                        
+                        <img src="/imgs/preview/preview3.jpg" alt="ionic3入门教程">
+                    </div>
+                    <div class="info">
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="visible-xs">
+        <div class="title-article">
+            <center>
+                <h4>
+                    <a href="/2017/01/14/ionic3-tutorial/">
+                        <span>ionic3入门教程</span>
+                    </a>
+                </h4>
+            </center>
+        </div>
+        <p></p>
+        <center>
+            <i class="fa fa-calendar"></i> 2017-01-14
+        </center>
+        <p></p>
+        <p></p>
+        <center>
+            
+            <i class="fa fa-tags"></i>
+            
+            <a href="/tags/ionic3入门教程/">ionic3入门教程</a>
+            
+            
+            
+        </center>
+        <p></p>
+        <div class="alert alert-gal article-body content-article">
+            <p style="text-align: center;">
+                <a href="/2017/01/14/ionic3-tutorial/">
+                    
+                    <img src="/imgs/preview/preview1.jpg" alt="ionic3入门教程">
+                </a>
+            </p>
+        </div>
+        
+        <a class="btn btn-danger pull-right read-more btn-block" href="/2017/01/14/ionic3-tutorial/">
+            阅读全文
+            <!--<span class="badge">739</span>-->
+        </a>
+    </section>
+</div>
+     
+</div>
+<!-- 前方最多7个 < 1 2 3 4 5 6 -->
+<!-- 前方超过第7页则分为 < 1 ... (n - 3) (n - 2) (n - 1) n, 此时前面为固定的6个 -->
+
+<!-- 后方最多8个 (n + 1) 到 (n + 7) > -->
+<!-- 如果末页和当前页相差超过7, 此时后面为固定的6个, (n + 1) (n + 2) (n + 3) ... total > -->
 
 
-  
+
+<div id="gal-pagination" class="clearfix">
+    <ul class="pagination pagination-gal pull-right">
+        
+        
+        
+        
+        <li class="current">
+            <span>1</span>
+        </li>
+        
+        
+        
+        
+    </ul>
+</div>
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get"
+              action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
 </aside>
-
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-left">
-      &copy; 2014.09 - 2018 小云云&nbsp;|&nbsp;
-      <!-- 主题 <a href="https://github.com/giscafer/hexo-theme-cafe/" target="_blank">Cafe -->
-      </a>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            小云云
+            <i class="fa fa-quote-right"></i>
+        </div>
+        <div class="author-panel text-center">
+            <img src="/imgs/001avatar.jpg" width="140" height="140"
+                 alt="个人头像" class="author-image">
+            <p class="author-description"><p>全栈技术</p>
+</p>
+        </div>
     </div>
-     <div id="footer-right">
-      联系方式&nbsp;|&nbsp;891177434@qq.com
-    </div>
-  </div>
-</footer>
- <script src="/jquery/jquery.min.js"></script>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">首页</a>
-  
-    <a href="/archives" class="mobile-nav-link">分类</a>
-  
-    <a href="/about" class="mobile-nav-link">关于</a>
-  
-    <a href="https://www.baidu.com/" class="mobile-nav-link">项目</a>
-  
-    <a href="/tool" class="mobile-nav-link">小工具</a>
-  
-</nav>
-    <img class="back-to-top-btn" src="/images/fly-to-top.png"/>
-<script>
-// Elevator script included on the page, already.
-window.onload = function() {
-  var elevator = new Elevator({
-    selector:'.back-to-top-btn',
-    element: document.querySelector('.back-to-top-btn'),
-    duration: 1000 // milliseconds
-  });
-}
-</script>
-      
-
-  
-    <script>
-      var cloudTieConfig = {
-        url: document.location.href, 
-        sourceId: "",
-        productKey: "e2fb4051c49842688ce669e634bc983f",
-        target: "cloud-tie-wrapper"
-      };
-    </script>
-    <script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
+</aside>
     
+    <aside id="sidebar-recent_comments">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-comments"></i>
+            最新评论
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/05/10/rem_century/">REM时代(mobile_rem_century_workflow_ionic3_angular4)</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/01/14/ionic3-tutorial/">ionic3入门教程</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/05/10/rem_century/">REM时代(mobile_rem_century_workflow_ionic3_angular4)</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/01/14/ionic3-tutorial/">ionic3入门教程</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+                <li class="">
+                    <a href="/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                <li class="">
+                    <a href="/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                <li class="">
+                    <a href="/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/rem/" style="font-size: 13.327041558010487px;" class="tag-cloud-link">rem</a>
+    
+    <a href="/tags/ionic3/" style="font-size: 15.017402293777739px;" class="tag-cloud-link">ionic3</a>
+    
+    <a href="/tags/ionic3入门教程/" style="font-size: 9.193087931727895px;" class="tag-cloud-link">ionic3入门教程</a>
+    
+</div>
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
+    </li>
+    
+    <li>
+        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
+    </li>
+    
+    <li>
+        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
+    </li>
+    
+</div>
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://github.com/ZEROKISEKI/" target="_blank">Github</a>
+    </li>
+    
+    <li>
+        <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
+    </li>
+    
+    <li>
+        <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
+    </li>
+    
+</div>
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2018 小云云 Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+    </div>
+</footer>
 
-  
-
-
-
-
-
-
-
-<!-- author:forvoid begin -->
-<!-- author:forvoid begin -->
-
-<!-- author:forvoid end -->
-
-<!-- author:forvoid end -->
-
-
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      })
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      })
-    </script>
-    <script type="text/javascript" src="https://cdn.rawgit.com/mathjax/MathJax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
-
-
- <script src="/js/is.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-<script src="/js/elevator.js"></script>
-  </div>
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
+</div>
 </body>
+<script src="/js/activate-power-mode.js"></script>
+<script>
+
+    // 配置highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = '共%2张图, 当前是第%1张';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '6'
+    }
+</script>
+<script src="/js/hs.js"></script>
+<script src="/js/blog.js"></script>
+
+<script src="/js/oni.js"></script>
+
+
+
 </html>
